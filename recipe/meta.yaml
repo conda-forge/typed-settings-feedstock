@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typed-settings-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typed_settings-{{ version }}.tar.gz
   sha256: a3470f0ffeff0d2f5a52d2c3035621c4aaf150313b125bf807bce52954ac1494
 
 build:

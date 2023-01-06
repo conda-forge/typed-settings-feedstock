@@ -17,6 +17,7 @@ build:
 
 requirements:
   host:
+    - hatchling
     - pip
     - python
   run:

@@ -1,5 +1,5 @@
 {% set name = "typed-settings" %}
-{% set version = "0.11.1" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -7,23 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typed-settings-{{ version }}.tar.gz
-  sha256: 81cc8e794c91030539b3e5e840eff2334b71ed01e30ec05eca87b91d1647b48b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typed_settings-{{ version }}.tar.gz
+  sha256: a3470f0ffeff0d2f5a52d2c3035621c4aaf150313b125bf807bce52954ac1494
 
 build:
   number: 0
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  skip: True  # [py < 37]
 
 requirements:
   host:
+    - hatchling
     - pip
-    - python >=3.7
+    - python
   run:
-    - attrs >=20.3
-    - cattrs >=1.7
-    - python >=3.7
-    - toml >=0.10
+    - python
+    - attrs >=22.1
+    - cattrs >=22.2
+    - tomli >=2  # [py < 311]
 
 test:
   imports:

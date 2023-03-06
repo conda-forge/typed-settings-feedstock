@@ -1,11 +1,11 @@
-About typed-settings
-====================
+About typed-settings-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typed-settings-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.com/sscherfke/typed-settings
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typed-settings-feedstock/blob/main/LICENSE.txt)
 
 Summary: Typed settings based on attrs classes
 

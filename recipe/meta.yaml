@@ -1,5 +1,5 @@
 {% set name = "typed-settings" %}
-{% set version = "24.3.0" %}
+{% set version = "24.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/typed_settings-{{ version }}.tar.gz
-  sha256: c75a2349264daca9011ca13d756c3b3735ff1ba82045844843930c6a1c0bd4fb
+  sha256: 274998f2285f466f77f3fab2570915545228fa19fbf024742e7035bb9c51dc86
 
 build:
   number: 0
